@@ -1,32 +1,44 @@
-# Timeout Backend
+# Patient Management App (Java)
 
-A robust, production-ready Node.js backend API built with Express, MongoDB, JWT-based authentication, and rate-limiting middleware.  
-Ideal for handling user sessions, timeouts and secure API access.
+Eine einfache Java-Anwendung zur Verwaltung von Patientendaten.  
+Das Projekt demonstriert Grundlagen von objektorientierter Programmierung, Datenmodellierung und der Arbeit mit Collections in Java.
 
-## 🔍 Features
+## 🎯 Ziele
 
-- User authentication & authorization (JWT)
-- Rate limiting to protect endpoints from abuse
-- MongoDB data models (via Mongoose)
-- Clear project structure: controllers, models, routes, middleware
-- Environment-based configuration for secure deployment
-- Ready for both development (with hot-reload) and production usage
+- Patienten in einem System erfassen, anzeigen, suchen und verwalten
+- Saubere Trennung von Datenmodell (Patient), Logik und UI (Konsole)
+- Java-Grundlagen für eine kleine Praxis-/Verwaltungssoftware zeigen
 
-## 🛠️ Tech Stack
+## ✨ Features
 
-- **Runtime / Framework**: Node.js + Express
-- **Database**: MongoDB (via Mongoose)
-- **Auth**: JSON Web Tokens (JWT)
-- **Rate Limiting**: Express rate-limit or custom middleware
-- **Env Config**: dotenv
-- **Structure**: MVC-style separation (controllers, models, routes, middleware)
-- **Others**: bcrypt for password hashing, cookie-parser, CORS support, etc.
+- Patient anlegen (z. B. Name, ID, Alter / Geburtsdatum, Diagnose etc.)
+- Liste aller Patienten anzeigen
+- Patienten nach ID oder Namen suchen
+- Patientendaten aktualisieren (z. B. Diagnose)
+- Patienten aus dem System entfernen
+- Einfache Konsolenoberfläche (Menüführung)
 
-## 🚀 Setup & Installation
+> Hinweis: Die Daten werden aktuell im Speicher gehalten (kein persistentes Speichern in einer Datenbank).
 
-### 1. Clone the repository
+---
 
-```bash
-git clone https://github.com/Achrafbennanizia/backend.git
-cd backend
-```
+## 🛠 Tech Stack
+
+- **Sprache:** Java (z. B. Java 17 oder höher)
+- **Typ:** Konsolenanwendung
+- **Build:** Kompilierung direkt über `javac` oder eine IDE (z. B. IntelliJ IDEA, VS Code)
+
+---
+
+## 📁 Projektstruktur
+
+Grober Aufbau (kann je nach Umsetzung leicht variieren):
+
+```text
+patientmanagementApp/
+└── java/
+    └── com/
+        └── patientmanagement/
+            ├── Main.java
+            ├── Patient.java
+            └── ... weitere Klassen (Service, Utils, etc.)
